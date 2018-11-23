@@ -1,6 +1,6 @@
 English
 - 
-- Converted to vRPex
+- vRP
 - A simple script that displays an animation when opening the menu (K)
 - This is not a resource don't put it in "resources" folder
 - Requires vRP
@@ -8,7 +8,7 @@ English
 
 Română
 -
-- Converti en vRPex
+- vRP
 - Un simplu script care afișează o animație la deschiderea meniului (K)
 - Aceasta nu este o resursă nu o puneți in folder-ul "resources"
 - Funționează doar cu vRP
@@ -16,7 +16,7 @@ Română
 
 Portugues
 -
-- Convertido para vRPex
+- vRP
 - Um script simples que mostra uma animacao quando abre o menu (K)
 - Isso nao e um resource nao bote em sua pasta "resources"
 - Precisa de vRP

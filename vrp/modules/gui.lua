@@ -13,7 +13,7 @@ local phoneAnim = {}
 AddEventHandler("vRP:playerLeave", function(user_id, source)
   if phoneAnim[source] then
 	  TriggerClientEvent("deletePhone", source)
-	  vRPclient._playAnim(source,true,seq_out,false)
+	  vRPclient.playAnim(source,{true,seq_out,false})
     phoneAnim[source] = false
   end
 end)
@@ -36,7 +36,7 @@ local menus = {"Main Menu"}
     if case(menudef.name) == case(v) then
       if not phoneAnim[source] then
         TriggerClientEvent("createPhone", source)
-        vRPclient._playAnim(source,true,seq_in,true)
+        vRPclient.playAnim(source,{true,seq_in,true})
       end
       phoneAnim[source] = true
     end
@@ -47,6 +47,6 @@ local menus = {"Main Menu"}
 --- PT: Cole no primeiro "if" da funcao "tvRP.closeMenu"
     if phoneAnim[source] == true then
       TriggerClientEvent("deletePhone", source)
-      vRPclient._playAnim(source,true,seq_out,false)
+      vRPclient.playAnim(source,{true,seq_out,false})
       phoneAnim[source] = false
     end
