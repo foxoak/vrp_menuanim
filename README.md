@@ -20,7 +20,7 @@ Portugues
 - Um script simples que mostra uma animacao quando abre o menu (K)
 - Isso nao e um resource nao bote em sua pasta "resources"
 - Precisa de vRP
-- Nu uita să faci un backup la `vrp/modules/gui.lua` înainte de a începe
+- Nao se esqueca de fazer backup no `vrp/modules/gui.lua` antes de comecar o trabalho
 
 
 Gallery / Poze
