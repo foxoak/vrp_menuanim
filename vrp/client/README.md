@@ -5,3 +5,8 @@ English
 Română
 -
 - Copiază conținutul din `gui.lua` in `vrp/client/gui.lua` din server-ul tău
+
+
+Portugues
+-
+- Copie o conteudo `gui.lua` e cole no `vrp/client/gui.lua` no comeco do codigo!

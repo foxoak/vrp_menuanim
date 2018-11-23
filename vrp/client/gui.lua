@@ -1,3 +1,4 @@
+--- BR: Cole no comeco do codigo do vrp/client/gui.lua
 RegisterNetEvent("createPhone")
 AddEventHandler("createPhone", function()
     playerPed = GetPlayerPed(-1)
