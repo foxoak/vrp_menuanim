@@ -10,6 +10,7 @@ local seq_out = {
   {"cellphone@","cellphone_text_out",1}
 }
 local phoneAnim = {}
+local contador = 0
 AddEventHandler("vRP:playerLeave", function(user_id, source)
   if phoneAnim[source] then
 	  TriggerClientEvent("deletePhone", source)
@@ -32,11 +33,13 @@ local menus = {"Main Menu"}
 --- EN: At the beggining of the function "vRP.openMenu"
 --- RO: La începutul funcției "vRP.openMenu"
 --- PT: Cole no comeco da funcao "vRP.openMenu"
+  contador = 0 
   for i, v in pairs(menus) do
     if case(menudef.name) == case(v) then
       if not phoneAnim[source] then
         TriggerClientEvent("createPhone", source)
         vRPclient._playAnim(source,true,seq_in,true)
+	contador = contador + 1
       end
       phoneAnim[source] = true
     end
@@ -45,8 +48,10 @@ local menus = {"Main Menu"}
 --- EN: In first "if" from function "tvRP.closeMenu"
 --- RO: La primul "if" al funcției "tvRP.closeMenu"
 --- PT: Cole no primeiro "if" da funcao "tvRP.closeMenu"
+   if contador >= 2 then
     if phoneAnim[source] == true then
       TriggerClientEvent("deletePhone", source)
       vRPclient._playAnim(source,true,seq_out,false)
       phoneAnim[source] = false
     end
+   end
