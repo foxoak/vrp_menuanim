@@ -44,7 +44,7 @@ local menus = {"Main Menu"}
       phoneAnim[source] = true
     end
   end
---3--------------------------------------------------------------------------------------------  
+--3-------------------------------------------------------------------------------------------  
 --- EN: In first "if" from function "tvRP.closeMenu"
 --- RO: La primul "if" al funcției "tvRP.closeMenu"
 --- PT: Cole no primeiro "if" da funcao "tvRP.closeMenu"
@@ -55,3 +55,7 @@ local menus = {"Main Menu"}
       phoneAnim[source] = false
     end
    end
+----------------------------------------------------------------------------------------------  
+--- EN: before end from function "tvRP.closeMenu"
+--- PT: antes do end da funcao "tvRP.closeMenu"
+contador = contador + 1
